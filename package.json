@@ -1,0 +1,22 @@
+{
+  "name": "iotsendcmd",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "stylus": "*",
+	"serve-favicon": "*",
+	"morgan": "*",
+	"body-parser": "*",
+	"method-override": "*",
+	"sockjs": "*",
+	"http": "*",
+	"mqtt": "*",
+	"path": "*",
+	"properties": "*"
+  },
+  "engines": {
+    "node": "*",
+    "npm": "1.4.x"
+  }
+}
