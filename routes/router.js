@@ -8,19 +8,19 @@ router.use(function(req, res, next) {
 });
 
 router.post('/', function(req, res) {
-	console.log('sendcmd' + req.body);
-	var connection = req.app.get('connection');
-	if (connection)
-	  connection.publish(req.body);
-	res.sendStatus(200);
+  console.log('sendcmd' + req.body);
+  var connection = req.app.get('connection');
+  if (connection)
+    connection.publish(req.body);
+  res.sendStatus(200);
 });
 
 router.post('/connect', function(req, res) {
-	console.log("connecting");
-	var connection = req.app.get('connection');
-	if (connection)
-	  connection.connect();
-	res.sendStatus(200);
+  console.log("connecting");
+  var connection = req.app.get('connection');
+  if (connection)
+    connection.connect();
+  res.sendStatus(200);
 });
 
 module.exports = router;
