@@ -8,7 +8,7 @@ router.use(function(req, res, next) {
 });
 
 router.post('/', function(req, res) {
-  console.log('sendcmd' + req.body);
+  // console.log('sendcmd' + req.body);
   var connection = req.app.get('connection');
   if (connection)
     connection.publish(req.body);

@@ -114,7 +114,7 @@ Connection.prototype.publish = function(data) {
     return;
   }
   if (this.connected != true) {
-    global.clientlog.write("not connected");
+    // global.clientlog.write("not connected");
     return;
   }
 
